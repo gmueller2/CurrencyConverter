@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="u13-21-5Bb" userLabel="Main Stack View">
-                                <rect key="frame" x="30" y="565.66666666666663" width="333" height="222.33333333333337"/>
+                                <rect key="frame" x="30" y="508" width="333" height="280"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rvG-3p-9vI" userLabel="USD Input">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="38.333333333333336"/>
@@ -45,13 +45,16 @@
                                         <rect key="frame" x="0.0" y="53.333333333333371" width="333" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro (EUR)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sls-M9-RkN">
-                                                <rect key="frame" x="0.0" y="1.3333333333333712" width="284" height="28.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="1.3333333333332575" width="284" height="28.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1Y-ls-Tev">
                                                 <rect key="frame" x="284" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="euro_switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="qF0-B3-bsZ"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -59,13 +62,16 @@
                                         <rect key="frame" x="0.0" y="99.333333333333371" width="333" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yen (JPY)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWa-OL-ny8">
-                                                <rect key="frame" x="0.0" y="1.3333333333333712" width="284" height="28.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="1.3333333333332575" width="284" height="28.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9BN-CI-atf">
                                                 <rect key="frame" x="284" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="yen_switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="4K9-Je-xME"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -73,13 +79,16 @@
                                         <rect key="frame" x="0.0" y="145.33333333333337" width="333" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rupee (INR)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6e-Ob-Qw8">
-                                                <rect key="frame" x="0.0" y="1.3333333333333712" width="284" height="28.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="1.3333333333332575" width="284" height="28.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AdQ-ly-zEo">
                                                 <rect key="frame" x="284" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="rupee_switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="bMr-ix-ZU3"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -87,16 +96,26 @@
                                         <rect key="frame" x="0.0" y="191.33333333333337" width="333" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ruble (RUB)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-XU-cIS">
-                                                <rect key="frame" x="0.0" y="1.3333333333333712" width="284" height="28.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="1.3333333333332575" width="284" height="28.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xFM-kz-RmD">
                                                 <rect key="frame" x="284" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="ruble_switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="N7o-HT-Tpr"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsk-vs-KoH">
+                                        <rect key="frame" x="0.0" y="237.33333333333334" width="333" height="42.666666666666657"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="CONVERT">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
