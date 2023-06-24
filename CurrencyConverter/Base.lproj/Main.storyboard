@@ -189,7 +189,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq2-Fx-BFB">
-                                <rect key="frame" x="158.66666666666666" y="302.33333333333331" width="75.666666666666657" height="38.333333333333314"/>
+                                <rect key="frame" x="158.66666666666666" y="252.33333333333334" width="75.666666666666657" height="38.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -198,7 +198,7 @@
                         <viewLayoutGuide key="safeArea" id="CVZ-4I-ubE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Eq2-Fx-BFB" firstAttribute="centerY" secondItem="lUF-1y-I8r" secondAttribute="centerY" constant="-70" id="cqh-J3-HWH"/>
+                            <constraint firstItem="Eq2-Fx-BFB" firstAttribute="centerY" secondItem="lUF-1y-I8r" secondAttribute="centerY" constant="-120" id="5hd-6C-QuV"/>
                             <constraint firstItem="CVZ-4I-ubE" firstAttribute="trailing" secondItem="agT-57-fqV" secondAttribute="trailing" constant="50" id="dT3-BU-eVu"/>
                             <constraint firstItem="agT-57-fqV" firstAttribute="leading" secondItem="CVZ-4I-ubE" secondAttribute="leading" constant="50" id="def-gK-9LN"/>
                             <constraint firstItem="Eq2-Fx-BFB" firstAttribute="centerX" secondItem="lUF-1y-I8r" secondAttribute="centerX" id="gjf-zH-kxR"/>
