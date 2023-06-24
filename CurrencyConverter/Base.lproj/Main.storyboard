@@ -115,6 +115,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="CONVERT">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="convert_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Hw-Yc-RBF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -129,6 +132,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u13-21-5Bb" secondAttribute="trailing" constant="30" id="ytr-rC-5OS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currency_field" destination="QwL-Bt-i6d" id="ykj-kC-ac2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
